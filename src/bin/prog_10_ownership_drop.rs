@@ -15,8 +15,10 @@ impl Drop for Tracked {
 
 fn main() {
     {
-        let s = Tracked(String::from("hello"));
-        println!("inside scope");
+       let mut s = Tracked(String::from("hello"));
+       // Scope and assignment
+       // See: https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html
+       s = Tracked(String::from("ahoy"));
+       println!("leaving scope s");
     }
-    println!("outside scope");
 }
