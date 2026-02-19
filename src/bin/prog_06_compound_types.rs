@@ -14,9 +14,9 @@ fn main() {
 
     println!("Tuple tup is ({x}, {y}, {z}).");
     println!("Tuple tup is ({}, {}, {}).", tup.0,tup.1,tup.2);
-    println!("Tuple tup is {:?}.", tup);           // Debug Trait
-    println!("Unit tuple is {:?}.", unit_tuple);   // Debug Trait
-    println!("The array a is {:?}", a);            // Debug Trait
-    println!("The array months is {:?}", months);  // Debug Trait
-    println!("The array explictly_typed_a is {:?}", explictly_typed_a);
+    println!("Tuple tup is {tup:?}.");           // Debug Trait
+    println!("Unit tuple is {unit_tuple:?}.");   // Debug Trait
+    println!("The array a is {a:?}");            // Debug Trait
+    println!("The array months is {months:?}");  // Debug Trait
+    println!("The array explictly_typed_a is {explictly_typed_a:?}");
 }
