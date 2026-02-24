@@ -2,6 +2,10 @@
 
 #[derive(Debug)]
 #[derive(PartialEq)]
+
+// Tuple structs have the added meaning the struct name provides but don’t
+// have names associated with their fields; rather, they just have the types
+// of the fields.
 struct Color(i32, i32, i32);
 
 #[derive(Debug)]
